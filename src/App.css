@@ -1,0 +1,89 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+.active {
+  background-color:crimson;
+  color: black;
+  font-weight: 600;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.back-btn{
+  background-color: #888;
+  font-size: calc(1em + 1vw);
+  font-weight: 800;
+}
+.back-btn:hover{
+  background-color: crimson;
+
+}
+.table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  background: inherit;
+  color: #fff;
+  border: 1px solid black;
+}
+.table .blocks {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  height: 400px;
+  width: 400px;
+  background-color: #888;
+}
+.form label{
+  display: block;
+    font-size: calc(1em + 1vw);
+    font-weight: 700;
+}
+.submit{
+  display: block;
+  font-size: calc(1em , 1vw);
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
